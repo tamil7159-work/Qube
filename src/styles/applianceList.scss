@@ -1,0 +1,123 @@
+.appliances-container {
+  font-family: Commissioner;
+  background: #eff3f7;
+  height: 100vh;
+  .header {
+    height: 72px;
+    background: #FFFFFF;
+    span {
+      position: relative;
+      top: 16px;
+      left: 25px;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 40px;
+      color: #2D3540;
+    }
+  }
+  .appliances-body {
+    padding: 24px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    .device-status {
+      display: flex;
+      gap: 16px;
+      height: 56px;
+      padding: 16px 24px;
+      border-radius: 8px;
+      background: #FFFFFF;
+    }
+    .appliances-table {
+      background: #FFFFFF;
+      border-radius: 8px;
+      .table-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px;
+        .left {
+          display: flex;
+          gap: 16px;
+          height: 32px;
+          .filter {
+            background: #E6ECF0;
+            width: 69px;
+            border-radius: 8px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+          }
+        }
+        .right {
+          display: flex;
+          gap: 11px;
+          align-items: center;
+          span {
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 20px;
+          }
+          .ant-select {
+            width: 69.58px;
+            height: 32px;
+          }
+          .ant-pagination {
+            .ant-pagination-item, .ant-pagination-next, .ant-pagination-prev {
+              width: 30px;
+              height: 32px;
+              line-height: 30px;
+            }
+            .ant-pagination-item-active {
+              background: #EBF5FF;
+              border-radius: 8px;
+            }
+          }
+        }
+      }
+      .ant-table {
+        border-radius: 8px;
+        .ant-table-content {
+          height: calc(100vh - 256px);
+          overflow: auto;
+        }
+        .ant-table-thead {
+          th {
+            background: none;
+            border-bottom: 1px solid lightgray;
+          }
+        }
+        .ant-table-tbody {
+          .view-btn {
+            background: var(--Grey-100, #E6ECF0);
+            border-radius: 6px;
+            width: 48px;
+            height: 28px;
+            border: none;
+          }
+        }
+      }
+    }
+    .status {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      span {
+        width: 8px;
+        height: 8px;
+        border-radius: 3px;
+      }
+    }
+    .type-icon {
+      margin-right: 5px;
+    }
+  }
+}
+.not-found {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
